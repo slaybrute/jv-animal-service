@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-sexes
+      author: Artem Peiev
+      changes:
+        - insert:
+            tableName: sexes
+            columns:
+              - column:
+                  name: id
+                  value: "male"
+              - column:
+                  name: enum_value
+                  value: "MALE"
+        - insert:
+            tableName: sexes
+            columns:
+              - column:
+                  name: id
+                  value: "female"
+              - column:
+                  name: enum_value
+                  value: "FEMALE"

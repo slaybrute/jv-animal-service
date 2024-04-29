@@ -1,0 +1,77 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-types
+      author: Artem Peiev
+      changes:
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "cat"
+              - column:
+                  name: enum_value
+                  value: "CAT"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "dog"
+              - column:
+                  name: enum_value
+                  value: "DOG"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "parrot"
+              - column:
+                  name: enum_value
+                  value: "PARROT"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "rabbit"
+              - column:
+                  name: enum_value
+                  value: "RABBIT"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "turtle"
+              - column:
+                  name: enum_value
+                  value: "TURTLE"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "fish"
+              - column:
+                  name: enum_value
+                  value: "FISH"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "snake"
+              - column:
+                  name: enum_value
+                  value: "SNAKE"
+        - insert:
+            tableName: types
+            columns:
+              - column:
+                  name: id
+                  value: "ferret"
+              - column:
+                  name: enum_value
+                  value: "FERRET"

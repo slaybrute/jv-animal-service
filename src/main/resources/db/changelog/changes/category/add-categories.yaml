@@ -1,0 +1,53 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-categories
+      author: Artem Peiev
+      changes:
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: enum_value
+                  value: "FIRST"
+              - column:
+                  name: description
+                  value: "cost in range [0; 20]"
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: enum_value
+                  value: "SECOND"
+              - column:
+                  name: description
+                  value: "cost in range [21; 40]"
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: enum_value
+                  value: "THIRD"
+              - column:
+                  name: description
+                  value: "cost in range [41; 61]"
+        - insert:
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: enum_value
+                  value: "FOURTH"
+              - column:
+                  name: description
+                  value: "cost more than 61"

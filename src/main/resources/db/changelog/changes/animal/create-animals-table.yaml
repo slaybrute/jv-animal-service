@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-animals-table
+      author: Artem Peiev
+      changes:
+        - createTable:
+            tableName: animals
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type_id
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sex_id
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: weight
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cost
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: category_id
+                  type: integer
+                  constraints:
+                    nullable: false

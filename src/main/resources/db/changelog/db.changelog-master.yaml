@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/animal/create-animals-table.yaml
+  - include:
+      file: db/changelog/changes/category/create-category-table.yaml
+  - include:
+      file: db/changelog/changes/category/add-categories.yaml
+  - include:
+      file: db/changelog/changes/sex/create-sexes-table.yaml
+  - include:
+      file: db/changelog/changes/sex/add-sexes.yaml
+  - include:
+      file: db/changelog/changes/type/create-types-table.yaml
+  - include:
+      file: db/changelog/changes/type/add-types.yaml
